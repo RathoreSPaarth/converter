@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"> 
+</head>
+<style>
+    body{
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+   
+    button{
+        margin-top: 2%;
+    }
+</style>
+<body>
+    <div class="container-fluid bg-info" style="height: 110vh;">
+        <div class="row bg-dark">
+            <div class="col-lg-12 text-center" style="font-size: 500%; color: white;">
+                CONVERTER
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-2">
+
+            </div>
+            <div class="col-lg-4" >
+                <div class="row" >
+                    <div class="col-lg-12">
+                        <input id="kg" step="any" type="number">
+                    </div>
+                    <div class="col-lg-12">
+                        <button class="btn btn-primary" onclick="kgTolbs()" type="submit">KG TO LBS</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <input id = "lbs" step="any" type="number">
+                    </div>
+                    <div class="col-lg-12">
+                        <button class="btn btn-primary" onclick="lbsTokg()" type="submit">LBS TO KG</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+        <!-- meters to yard -->
+        <div class="row" style=" margin-top: 3%;">
+            <div class="col-lg-2">
+
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <input id="meters" step="any" type="number">
+                    </div>
+                    <div class="col-lg-12">
+                        <button class="btn btn-primary" onclick="metersToyards()" type="submit">METERS TO YARDS</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <input id = "yards" step="any" type="number">
+                    </div>
+                    <div class="col-lg-12">
+                        <button class="btn btn-primary" onclick="yardsTometers()" type="submit">YARDS TO METERS</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+        <div class="row" style=" margin-top: 3%;">
+            <div class="col-lg-2">
+
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <input id="celcius" step="any" type="number">
+                    </div>
+                    <div class="col-lg-12">
+                        <button class="btn btn-primary" onclick="celciusTofar()" type="submit">CELCIUS TO FAHRENHEIT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <input id = "far" step="any" type="number">
+                    </div>
+                    <div class="col-lg-12">
+                        <button class="btn btn-primary" onclick="farTocelcius()" type="submit">FAHRENHEIT TO CELCIUS</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
